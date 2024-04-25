@@ -13,9 +13,59 @@ a {
     color: rgb(255, 255, 255);
 }
 
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
 header {
-    border: 2px solid gray;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /* border-bottom: 2px solid transparent; */
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
+    grid-column: 2;
+    padding: 10px 20px;
+}
+
+.nav-bar-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.search-bar {
+    background-color: #E2E8F0;
+    border: none;
+    border-radius: 15px;
+    width: 50%;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.notifications-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.member-avatar-1 {
+    width: 35px;
+    height: 35px;
+    margin: 0 20px;
+}
+
+header p {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.member-avatar-2 {
+    width: 55px;
+    height: 55px;
 }
 
 button {
@@ -30,10 +80,16 @@ button {
 .dashboard {
     background-color: #1A92D3;
     color: white;
+    grid-column: 1;
+    grid-row: 1 / span 2;
 }
 
 .main-content {
     background-color: #E2E8F0;
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    grid-column: 2;
+    grid-row: 2;
 }
 
 .main-content a {
