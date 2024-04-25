@@ -63,9 +63,21 @@ header p {
     font-size: 0.8em;
 }
 
+.nav-bar-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.user-info {
+    margin-right: auto;
+}
+
 .member-avatar-2 {
     width: 55px;
     height: 55px;
+    margin-right: 12px;
 }
 
 button {
@@ -73,8 +85,10 @@ button {
     border-radius: 20px;
     border: none;
     color: white;
-    width: 60px;;
-    height: 30px;;
+    font-size: 0.8em;
+    width: 70px;;
+    height: 30px;
+    margin-left: 12px;
 }
 
 .dashboard {
