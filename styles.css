@@ -10,5 +10,39 @@ li {
 
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+header {
+    border: 2px solid gray;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: #1A92D3;
+    border-radius: 20px;;
+    border: none;
+    color: white;
+    width: 60px;;
+    height: 30px;;
+}
+
+.dashboard {
+    background-color: #1A92D3;
+    color: white;
+}
+
+.main-content {
+    background-color: #E2E8F0;
+}
+
+.card {
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-left: 5px solid #F0B42A;
+}
+
+.right-sidebar  > div {
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
