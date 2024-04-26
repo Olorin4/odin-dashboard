@@ -14,10 +14,10 @@ a {
 }
 
 body {
-    max-height: 1vh;
+    /* height: 1vh; */
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 150px 700px;
+    grid-template-rows: 150px 735px;
 }
 
 header {
@@ -105,6 +105,17 @@ button a,
     grid-row: 1 / span 2;
 }
 
+#dashboard-title {
+    display: flex;
+    font-size: 0.9em;
+    letter-spacing: 0.05ch;
+}
+
+#dashboard-title img {
+    width: 30px;
+    margin-right: 5px;
+}
+
 .main-menu {
     font-weight: 500;
     display: grid;
@@ -122,9 +133,9 @@ button a,
     align-items: center;
 }
 .menu-item img {
-    width: 18px;
-    height: 18px;
-    margin: 0 15px;
+    width: 16px;
+    height: 16px;
+    margin: 0 12px;
 }
 
 a h3 {
@@ -151,8 +162,6 @@ a h3 {
 }
 
 .card {
-    /* border: 1px solid transparent; */
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
     box-shadow: 3px 3px rgb(225, 226, 226);
     border-left: 5px solid #F0B42A;
     border-radius: 5px;
@@ -196,20 +205,12 @@ a h3 {
 
 .announcements {
     background-color: #FFFFFF;
+    box-shadow: 3px 3px rgb(225, 226, 226);
     padding: 15px;
     border-radius: 5px;
-    flex: 1;
-    height: 30%;
-}
-
-.announcements div {
-    border-bottom: 2px solid rgb(190, 188, 188);
-}
-
-.trending {
-    background-color: #FFFFFF;
-    flex: 1;
-    height: 30%;
+    height: 50%;
+    display:flex;
+    flex-direction: column;
 }
 
 .right-sidebar > h4 {
@@ -217,13 +218,33 @@ a h3 {
     font-weight: 600;
 }
 
-.announcements div,
-.trending div {
+.announcements div {
     padding: 10px;
     font-size: 0.7em;
-    height: 30%;
+    border-bottom: 2px solid rgb(190, 188, 188);
+    
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
+
+.trending {
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px rgb(225, 226, 226);
+    border-radius: 5px;
+    height: 31.5%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.trending-item {
+    padding: 5px 0;
+    font-size: 0.6em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
