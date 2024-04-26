@@ -116,6 +116,22 @@ button a,
     padding: 10px;
 }
 
+.menu-item a {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.menu-item img {
+    width: 18px;
+    height: 18px;
+    margin: 0 15px;
+}
+
+a h3 {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
 .main-content {
     background-color: #E2E8F0;
     grid-column: 2;
